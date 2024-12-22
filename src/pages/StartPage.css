@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.process-btn {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    height: 40px;
+    padding: 0 1rem 0 1rem;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.process-btn:hover {
+    background-color: #383838;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.process-btn:active {
+    background-color: #242424;
+    transform: scale(
+        0.99
+    ); /* Slightly shrinks the button for a pressed effect */
+}
+
+.stream-link {
+    height: 40px;
+    display: flex;
+    width: 30rem;
+    /* padding-left: 1rem; */
+    z-index: 1;
+}
+
+.stream-link input {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid #2e2e2e; */
+    border: none;
+    background-color: var(--secondary);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0 1.5rem 0 2.5rem;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%23e8eaed'%3E%3Cpath d='M160-400q-33 0-56.5-23.5T80-480q0-33 23.5-56.5T160-560q33 0 56.5 23.5T240-480q0 33-23.5 56.5T160-400Zm66 228-56-56 174-174 56 56-174 174Zm120-388L172-734l56-56 174 174-56 56ZM480-80q-33 0-56.5-23.5T400-160q0-33 23.5-56.5T480-240q33 0 56.5 23.5T560-160q0 33-23.5 56.5T480-80Zm0-640q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720Zm134 162-56-58 176-174 56 56-176 176Zm120 386L560-346l56-56 174 174-56 56Zm66-228q-33 0-56.5-23.5T720-480q0-33 23.5-56.5T800-560q33 0 56.5 23.5T880-480q0 33-23.5 56.5T800-400Z'/%3E%3C/svg%3E");
+    background-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: 0.85rem 48%;
+    color: white;
+}
