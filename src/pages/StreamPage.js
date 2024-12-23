@@ -35,6 +35,7 @@ const StreamPage = () => {
 
     socket.current.on("frame", (data) => {
       if (videoRef.current) {
+        console.log("Got Frame...");
         videoRef.current.src = `data:image/jpeg;base64,${data}`;
       }
     });
